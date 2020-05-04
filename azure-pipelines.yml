@@ -1,6 +1,6 @@
 task: FortifySCA@5
   inputs:
-    licenseFile: 'c:\temp\fortify.license'
+    licenseFile: '$(Build.SourcesDirectory))\fortify.license'
     runBuildTranslate: true
     applicationType: 'java'
     fortifyBuildId: '452020'
