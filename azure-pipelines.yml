@@ -1,4 +1,4 @@
-- task: FortifySCA@5
+task: FortifySCA@5
   inputs:
     licenseFile: 'c:\temp\fortify.license'
     runBuildTranslate: true
