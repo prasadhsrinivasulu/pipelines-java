@@ -2,7 +2,9 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-latest'
+
+
 
 steps:
 - script: echo Hello, world!
@@ -13,9 +15,11 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+pool: server
+
 - task: FortifySCA@5
   inputs:
-    licenseFile: '$(System.DefaultWorkingDirectory)\D$\InBoundFTP\MFTBDDNTUSE\Fortify_SCA_and_Apps_17.20\fortify.license'
+    licenseFile: 'D:\InBoundFTP\MFTBDDNTUSE\Fortify_SCA_and_Apps_17.20\fortify.license'
     runBuildTranslate: true
     applicationType: 'java'
     fortifyBuildId: '34'
