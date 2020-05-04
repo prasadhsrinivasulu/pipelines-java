@@ -13,15 +13,15 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-task: FortifySCA@5
+- task: FortifySCA@5
   inputs:
     licenseFile: 'D:\InBoundFTP\MFTBDDNTUSE\Fortify_SCA_and_Apps_17.20\fortify.license'
     runBuildTranslate: true
     applicationType: 'java'
-    fortifyBuildId: '452020'
+    fortifyBuildId: '34'
     runFortifyRulepackUpdate: false
     runFortifyClean: true
-    scaVerbose: true
+    scaVerbose: false
     scaDebug: false
     runFortifyScan: true
     fortifyScanType: 'LocalScan'
