@@ -4,7 +4,8 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'Default'
+  vmImage: 'windows-latest'
 
 steps:
 - script: echo Hello, world!
