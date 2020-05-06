@@ -19,7 +19,7 @@ steps:
 
 - task: FortifySCA@5
   inputs:
-    licenseFile: '$(Build.SourcesDirectory))\fortify.license'
+    licenseFile: 'C:\Program Files\Fortify\Fortify_SCA_and_Apps_19.1.2\fortify.license'
     runBuildTranslate: true
     applicationType: 'java'
     fortifyBuildId: 'asdf'
